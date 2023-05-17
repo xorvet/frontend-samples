@@ -27,19 +27,7 @@ a {
 }
 
 .btn-div {
-  @apply h-[60%] flex-grow flex flex-col gap-4 bg-[#212a35] rounded-2xl p-5 overflow-auto;
-}
-
-.btns-col {
-  @apply w-full grid grid-cols-4 gap-4;
-}
-
-.num-div {
-  @apply gap-4 col-span-3 grid grid-cols-3 grid-flow-row;
-}
-
-.side-div {
-  @apply h-full flex flex-col gap-4;
+  @apply h-[60%] flex-grow grid grid-cols-4 grid-flow-row gap-4 bg-[#212a35] rounded-2xl p-5 overflow-auto;
 }
 
 .btn {
