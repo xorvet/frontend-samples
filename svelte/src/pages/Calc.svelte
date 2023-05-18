@@ -1,5 +1,6 @@
 <div class="calc">
   <div class="calc-out">
+  <p class="m-auto opacity-70">123456</p> 
   </div>
   <div class="btn-div">
     <button class="btn text-red-400 active:text-red-900">AC</button>

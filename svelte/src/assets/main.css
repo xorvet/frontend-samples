@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "ibm";
+  src: url("./IBM_Model3x_Alt3.woff") format("woff");
+}
+
 .body {
-  @apply h-100v w-full flex flex-col
+  @apply h-100v w-full flex flex-col;
 }
 
 .nav {
@@ -15,21 +20,22 @@ a {
 }
 
 .route {
-  @apply h-full flex gap-x-2 bg-black;
+  @apply h-full flex gap-x-2 bg-black overflow-auto;
 }
 
 .calc {
-  @apply flex flex-col p-6 gap-y-5 rounded-2xl text-white m-auto h-[80vh] w-[50vh] bg-[#171D23] border-2;
+  @apply flex flex-col p-7 gap-y-6 rounded-2xl text-white m-auto h-[760px] w-[480px] bg-[#171D23] ring-4 ring-gray-500;
 }
 
 .calc-out {
-  @apply border-4 border-black rounded-2xl h-[20%] bg-[#647155] shadow-inner shadow-black;
+  @apply flex border-4 border-black rounded-2xl h-[25%] bg-[#647155] shadow-inner shadow-black text-6xl text-black text-center font-extrabold;
+  font-family: "ibm", monospace;
 }
 
 .btn-div {
-  @apply h-[80%] flex-grow grid grid-cols-4 grid-flow-row gap-4 bg-gray-800 text-gray-300 text-3xl font-mono rounded-2xl p-5 overflow-auto border-4 border-black;
+  @apply h-[80%] flex-grow grid grid-cols-4 grid-flow-row gap-4 bg-gray-800 text-gray-300 text-3xl font-mono rounded-2xl p-4 overflow-auto border-4 border-black;
 }
 
 .btn {
-  @apply m-auto w-full h-20 text-center bg-[#171d23] border-4 border-black rounded-xl hover:shadow-2xl shadow-black shadow-sm active:shadow-inner active:shadow-black active:bg-gray-900 active:text-gray-400;
+  @apply m-auto w-full h-20 text-center bg-[#171d23] border-4 border-black rounded-xl hover:shadow-2xl shadow-black shadow-sm active:shadow-inner active:shadow-black active:bg-zinc-900 active:text-gray-400;
 }
