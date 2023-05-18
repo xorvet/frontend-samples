@@ -7,7 +7,7 @@
 }
 
 .nav {
-  @apply flex justify-evenly font-mono bg-black py-1;
+  @apply flex justify-evenly font-mono bg-black py-2 border-y;
 }
 
 a {
@@ -15,21 +15,21 @@ a {
 }
 
 .route {
-  @apply h-full flex gap-x-2;
+  @apply h-full flex gap-x-2 bg-black;
 }
 
 .calc {
-  @apply flex flex-col p-5 gap-y-5 rounded-2xl text-white m-auto h-[80vh] w-[50vh] bg-[#171D23];
+  @apply flex flex-col p-6 gap-y-5 rounded-2xl text-white m-auto h-[80vh] w-[50vh] bg-[#171D23] border;
 }
 
 .calc-out {
-  @apply border-2 border-blue-800 rounded-2xl h-[25%];
+  @apply border rounded-2xl h-[20%];
 }
 
 .btn-div {
-  @apply h-[60%] flex-grow grid grid-cols-4 grid-flow-row gap-4 bg-[#212a35] rounded-2xl p-5 overflow-auto;
+  @apply h-[80%] flex-grow grid grid-cols-4 grid-flow-row gap-4 bg-gray-800 text-gray-300 text-3xl font-mono rounded-2xl p-5 overflow-auto border;
 }
 
 .btn {
-  @apply m-auto w-full h-20 text-center bg-[#171c22] rounded-2xl;
+  @apply m-auto w-full h-20 text-center bg-[#171d23] border rounded-xl hover:shadow-2xl hover:bg-gray-700 active:bg-blue-200;
 }
