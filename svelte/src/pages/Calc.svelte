@@ -2,7 +2,7 @@
   <div class="calc-out">
   </div>
   <div class="btn-div">
-    <button class="btn text-red-400">AC</button>
+    <button class="btn text-red-400 active:text-red-900">AC</button>
     {#each btns as btn}
       <button class="btn">{btn}</button>
     {/each}
