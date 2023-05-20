@@ -1,18 +1,20 @@
+import { useState } from 'react';
+
 function Calc() {
-  let out = '';
+  const [Out, setOut] = useState('');
   const btns = "+,-,*,1,2,3,/,4,5,6,(,7,8,9,),0,.".split(",");
 
   function inn(val) {
     if (val === "AC") {
-      out = '';
+      setOut('');
     } else if (val === "=") {
       try {
-        out = eval(out);
+        setOut(eval(Out));
       } catch (_e) {
-        out = "Error";
+        setOut("Error");
       }
     } else {
-      out += val
+      setOut(Out + val);
     }
   }
 
@@ -20,12 +22,12 @@ function Calc() {
   return (
     <div className="calc">
       <div className="calc-out">
-        {out}
+        {Out}
       </div>
       <div className="btn-div">
         <button className="btn text-red-400 active:text-red-900" onClick={() => inn("AC")}>AC</button>
         {btns.map((btn) => (
-          <button className="btn" onClick={() => inn(btn)}>{btn}</button>
+          <button key={btn} className="btn" onClick={() => inn(btn)}>{btn}</button>
         ))}
         <button className="btn col-span-2" onClick={() => inn("=")}>=</button>
       </div>
